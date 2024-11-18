@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "jmeno": "Jan Novak",
+        "email": "jan.novak@example.com",
+        "heslo": "heslo123",
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "jmeno": "Petra Svobodova",
+        "email": "petra.svobodova@example.com",
+        "heslo": "tajneheslo",
+        "role": "user"
+
+    },
+    {
+        "id": 3,
+        "jmeno": "Karel Dvorak",
+        "email": "karel.dvorak@example.com",
+        "heslo": "abcd1234",
+        "role": "user"
+    }
+]

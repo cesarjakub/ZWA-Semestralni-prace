@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #e8e8e8;
+    color: #000000;
+    height: 100vh;
+}
+
+
+.main-container{
+    height: 100%;
+}
+
+.profile-card{
+    background-color: #fff;
+    font-size: 14px;
+    color: #212121;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px rgba(211, 161, 161, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.profile-card .profile-info{
+    margin: 12px 12px;
+
+}
+.profile-card .card-profile-name{
+    margin: 0;
+}
+.profile-card .card-profile-email{
+    margin: 0;
+}
+.profile-card .btn-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-card .btn-group form .logout-btn,
+.profile-card .btn-group .add-recipe-btn,
+.profile-card .btn-group .edit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    padding: 12px 16px;
+    gap: 8px;
+    margin: 12px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.profile-card .btn-group form .logout-btn:hover,
+.profile-card .btn-group .add-recipe-btn:hover,
+.profile-card .btn-group .edit-btn:hover{
+    background-color: #313131;
+}
+
+
+.add-recipe-modal,
+.edit-profile-card-modal{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    z-index: 1000;
+    padding: 32px 24px;
+    background-color: #fff;
+    color: #212121;
+    gap: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.add-recipe-modal .modal-header,
+.edit-profile-card-modal .modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-recipe-modal .modal-header,
+.edit-profile-card-modal .modal-header h3{
+    margin: 0;
+}
+.add-recipe-modal .form .form-group,
+.edit-profile-card-modal .form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.add-recipe-modal .form .form-group input[type="text"],
+.edit-profile-card-modal .form .form-group input[type="text"],
+.edit-profile-card-modal .form .form-group input[type="email"]{
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.add-recipe-modal .form .form-group input[type="text"]:focus,
+.edit-profile-card-modal .form .form-group input[type="text"]:focus,
+.edit-profile-card-modal .form .form-group input[type="email"]:focus{
+    outline: none;
+    border-color: #212121;
+}
+.add-recipe-modal .form .form-group input[type="file"]{
+    display: none;
+}
+.add-recipe-modal .form .form-group textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical;
+    outline: none;
+}
+.add-recipe-modal .form .form-group textarea:focus{
+    outline: none;
+    border-color: #212121;
+}
+.add-recipe-modal .form .form-group label,
+.edit-profile-card-modal .form .form-group label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.add-recipe-modal .form .form-group .image-file,
+.add-recipe-modal .form .form-submit-btn,
+.edit-profile-card-modal .form .form-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    padding: 12px 16px;
+    gap: 8px;
+    margin: 12px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.add-recipe-modal .form .form-group .image-file:hover,
+.add-recipe-modal .form .form-submit-btn:hover,
+.edit-profile-card-modal .form .form-submit-btn:hover {
+    background-color: #313131;
+}
+.add-recipe-modal .modal-header .close-add-recipe-modal,
+.edit-profile-card-modal .modal-header .close-profile-modal {
+    color: #313131;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.add-recipe-modal .modal-header .close-add-recipe-modal:hover,
+.edit-profile-card-modal .modal-header .close-profile-modal:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+
+.cards-pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards-pagination .recipes-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cards-pagination .recipes-cards .card{
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    padding: 32px 24px;
+    margin: 20px;
+    background-color: #fff;
+    color: #212121;
+    width: 350px;
+    z-index: 1;
+    gap: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.cards-pagination .recipes-cards .card .card-header h2{
+    margin: 0;
+}
+.cards-pagination .recipes-cards .card .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-pagination .recipes-cards .card .image-placeholder{
+    width: 100%;
+    height: 150px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.cards-pagination .recipes-cards .card .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.cards-pagination .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.pagination a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+.pagination a:hover {
+    background-color: #313131;
+    color: #fff; 
+}
+.pagination .line {
+    width: 1px;
+    height: 20px;
+    background-color: #2c2f38; 
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile-card{
+        justify-content: center;
+    }
+
+    .add-recipe-modal,
+    .edit-profile-card-modal{
+        width: 300px;
+    }
+}
+
+
+.shadow{
+    background-color: rgba(51, 51, 51, 0.664);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+

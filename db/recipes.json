@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "id_user": 1,
+        "title": "Smažený sýr",
+        "text_receptu": "Na pánvi rozpálíme olej, obalíme sýr v trojobalu a smažíme do zlatova.",
+        "time": "2024-10-29"
+    },
+    {
+        "id": 2,
+        "id_user": 2,
+        "title": "Špagety Carbonara",
+        "text_receptu": "Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.",
+        "time": "2024-10-29"
+    },
+    {
+        "id": 3,
+        "id_user": 1,
+        "title": "Bramborový salát",
+        "text_receptu": "Uvařené brambory nakrájíme na kostky, přidáme majonézu, okurky a dochutíme solí.",
+        "time": "2024-10-29"
+    }
+]

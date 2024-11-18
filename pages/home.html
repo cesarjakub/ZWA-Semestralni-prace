@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/home.css">
+    <!--<link rel="stylesheet" href="#" media="print">-->
+
+    <script src="../js/home.js" defer></script>
+
+    <title>My recipes</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="shadow"></div>
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2 class="card-profile-name">Jakub César</h2>
+                <p class="card-profile-email">Jakubcesar@seznam.cz</p>
+            </div>
+            <div class="btn-group">
+                <input class="edit-btn" type="submit" value="Edit Profile">
+                <input class="add-recipe-btn" type="submit" value="Add recipe">
+                <form action="#" method="post">
+                    <button type="submit" name="logout" value="logout" class="logout-btn">Logout</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="edit-profile-card-modal">
+            <div class="modal-header">
+                <h3>Edit Profile</h3>
+                <span class="close-profile-modal">&times;</span>
+            </div>
+            <form class="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input required placeholder="Enter your name" autocomplete="off" name="name" id="name" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input required name="email" placeholder="Enter your email" autocomplete="off" id="email" type="email">
+                </div>
+        
+                <input type="submit" class="form-submit-btn" value="Save Changes">
+            </form>
+        </div>
+
+        <div class="add-recipe-modal">
+            <div class="modal-header">
+                <h3>Add recipe</h3>
+                <span class="close-add-recipe-modal">&times;</span>
+            </div>
+            <form class="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input required placeholder="Enter title" name="title" id="title" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="image-file" for="image">Upload Image</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+                    <p class="image-file-name"></p>
+                </div>
+        
+                <input type="submit" class="form-submit-btn" value="Save recipe">
+            </form>
+        </div>
+
+        <div class="cards-pagination">
+            <div class="recipes-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Špagety Carbonara</h2>
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="" alt="image of {name}">
+                    </div>
+                    <div class="card-content">
+                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                    </div>
+                    <div class="card-footer">
+                        <h4>Jakub César</h4>
+                        <p>2024-10-29</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Špagety Carbonara</h2>
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="" alt="image of {name}">
+                    </div>
+                    <div class="card-content">
+                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                    </div>
+                    <div class="card-footer">
+                        <h4>Jakub César</h4>
+                        <p>2024-10-29</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Špagety Carbonara</h2>
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="" alt="image of {name}">
+                    </div>
+                    <div class="card-content">
+                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                    </div>
+                    <div class="card-footer">
+                        <h4>Jakub César</h4>
+                        <p>2024-10-29</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Špagety Carbonara</h2>
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="" alt="image of {name}">
+                    </div>
+                    <div class="card-content">
+                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                    </div>
+                    <div class="card-footer">
+                        <h4>Jakub César</h4>
+                        <p>2024-10-29</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="pagination">
+                <a href="#">1</a>
+                <div class="line"></div>
+                <a href="#">2</a>
+                <div class="line"></div>
+                <a href="#">3</a>
+                <div class="line"></div>
+                <a href="#">4</a>
+                <div class="line"></div>
+                <a href="#">5</a>
+                <div class="line"></div>
+                <a href="#">6</a>
+            </div>
+        </div>      
+
+    </div>
+</body>
+</html>

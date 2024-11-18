@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!--<link rel="stylesheet" href="#" media="print">-->
+
+    <script src="../js/dashboard.js" defer></script>
+
+    <title>Admin dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="shadow"></div>
+        <div class="profile">
+            <div class="profile-info">
+                <h2 class="card-profile-name">Jakub César</h2>
+                <p class="card-profile-email">Jakubcesar@seznam.cz</p>
+            </div>
+            <h2>Admin dashboard</h2>
+            <div class="btn-group">
+                <input class="add-recipe-btn" type="submit" value="Add recipe">
+                <form action="#" method="post">
+                    <button type="submit" name="logout" value="logout" class="logout-btn">Logout</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="add-recipe-modal">
+            <div class="modal-header">
+                <h3>Add recipe</h3>
+                <span class="close-add-recipe-modal">&times;</span>
+            </div>
+            <form class="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input required placeholder="Enter title" name="title" id="title" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="image-file" for="image">Upload Image</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+                    <p class="image-file-name"></p>
+                </div>
+        
+                <input type="submit" class="form-submit-btn" value="Save recipe">
+            </form>
+        </div>
+
+        <div class="choose-btn">
+            <button class="users">Users</button>
+            <button class="recipes">Recipes</button>
+        </div>
+
+        <div class="user-table">
+            <div class="dashboard-user">
+                <h2>Jakub César</h2>
+                <p>jakubcesar@seznam.cz</p>
+                <p>Admin: <span>Yes</span></p>
+                <div class="profile-action">
+                    <button class="edit-role">Set admin</button>
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-table">
+            <div class="dashboard-recipe">
+                <h2>Spaghetti Carbonara</h2>
+                <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
+                <div class="recipe-action">
+                    <button class="edit-recipe">Edit</button>
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+            <div class="dashboard-recipe">
+                <h2>Spaghetti Carbonara</h2>
+                <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
+                <div class="recipe-action">
+                    <button class="edit-recipe">Edit</button>
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+            <div class="dashboard-recipe">
+                <h2>Spaghetti Carbonara</h2>
+                <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
+                <div class="recipe-action">
+                    <button class="edit-recipe">Edit</button>
+                    <button class="remove-button">Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit-recipe-modal">
+            <div class="modal-header">
+                <h3>Edit recipe</h3>
+                <span class="close-edit-recipe-modal">&times;</span>
+            </div>
+            <form class="form" action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input required placeholder="Enter title" name="title" id="title" type="text">
+                </div>
+        
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="image-file" for="image">Upload Image</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+                    <p class="image-file-name"></p>
+                </div>
+        
+                <input type="submit" class="form-submit-btn" value="Save recipe">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
