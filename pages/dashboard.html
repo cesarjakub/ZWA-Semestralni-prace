@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!--<link rel="stylesheet" href="#" media="print">-->
 
     <script src="../js/dashboard.js" defer></script>
@@ -21,9 +21,13 @@
             </div>
             <h2>Admin dashboard</h2>
             <div class="btn-group">
-                <input class="add-recipe-btn" type="submit" value="Add recipe">
+                <button class="add-recipe-btn" type="submit">
+                    <img src="../images/icons/add.svg" alt="add-icon">
+                </button>
                 <form action="#" method="post">
-                    <button type="submit" name="logout" value="logout" class="logout-btn">Logout</button>
+                    <button type="submit" name="logout" value="logout" class="logout-btn">
+                        <img src="../images/icons/logout.svg" alt="logout-icon">
+                    </button>
                 </form>
             </div>
         </div>
@@ -35,13 +39,13 @@
             </div>
             <form class="form" action="#" method="post">
                 <div class="form-group">
-                    <label for="title">Title</label>
+                    <label for="title">Title *</label>
                     <input required placeholder="Enter title" name="title" id="title" type="text">
                 </div>
         
                 <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                    <label for="description">Description *</label>
+                    <textarea required name="description" placeholder="Enter description" id="description"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -52,6 +56,7 @@
         
                 <input type="submit" class="form-submit-btn" value="Save recipe">
             </form>
+            <p class="indicator">* indicates a required field</p>
         </div>
 
         <div class="choose-btn">
@@ -65,8 +70,12 @@
                 <p>jakubcesar@seznam.cz</p>
                 <p>Admin: <span>Yes</span></p>
                 <div class="profile-action">
-                    <button class="edit-role">Set admin</button>
-                    <button class="remove-button">Remove</button>
+                    <button class="edit-role">
+                        <img src="../images/icons/set-admin.svg" alt="set-admin-icon">
+                    </button>
+                    <button class="remove-button">
+                        <img src="../images/icons/delete.svg" alt="delete-icon">
+                    </button>
                 </div>
             </div>
         </div>
@@ -76,24 +85,12 @@
                 <h2>Spaghetti Carbonara</h2>
                 <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
                 <div class="recipe-action">
-                    <button class="edit-recipe">Edit</button>
-                    <button class="remove-button">Remove</button>
-                </div>
-            </div>
-            <div class="dashboard-recipe">
-                <h2>Spaghetti Carbonara</h2>
-                <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
-                <div class="recipe-action">
-                    <button class="edit-recipe">Edit</button>
-                    <button class="remove-button">Remove</button>
-                </div>
-            </div>
-            <div class="dashboard-recipe">
-                <h2>Spaghetti Carbonara</h2>
-                <p>Instructions: Cook pasta, mix with eggs and cheese, add bacon.</p>
-                <div class="recipe-action">
-                    <button class="edit-recipe">Edit</button>
-                    <button class="remove-button">Remove</button>
+                    <button class="edit-recipe">
+                        <img src="../images/icons/edit.svg" alt="edit-icon">    
+                    </button>
+                    <button class="remove-button">
+                        <img src="../images/icons/delete.svg" alt="delete-icon">
+                    </button>
                 </div>
             </div>
         </div>
@@ -105,23 +102,24 @@
             </div>
             <form class="form" action="#" method="post">
                 <div class="form-group">
-                    <label for="title">Title</label>
-                    <input required placeholder="Enter title" name="title" id="title" type="text">
+                    <label for="edit-title">Title *</label>
+                    <input required placeholder="Enter title" name="edit-title" id="edit-title" type="text">
                 </div>
         
                 <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                    <label for="edit-description">Description *</label>
+                    <textarea required name="edit-description" placeholder="Enter description" id="edit-description"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label class="image-file" for="image">Upload Image</label>
-                    <input type="file" name="image" id="image" accept="image/*">
-                    <p class="image-file-name"></p>
+                    <label class="image-file" for="edit-image">Upload Image</label>
+                    <input type="file" name="edit-image" id="edit-image" accept="image/*">
+                    <p class="image-file-name-2"></p>
                 </div>
         
                 <input type="submit" class="form-submit-btn" value="Save recipe">
             </form>
+            <p class="indicator">* indicates a required field</p>
         </div>
 
     </div>

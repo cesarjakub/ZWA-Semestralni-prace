@@ -19,7 +19,7 @@ openEditRecipe.forEach(button => {
     button.addEventListener("click", (event) => {
         editRecipeModal.style.display = "block";
         shadow.style.display = "block";
-        console.log(event.target.parentNode.parentNode)
+        console.log(event.currentTarget.parentNode.parentNode)
     });
 });
 
@@ -39,18 +39,33 @@ const removeRecord = document.querySelectorAll(".remove-button");
 
 removeRecord.forEach(button => {
     button.addEventListener("click", (event) => {
-        console.log(event);
+        console.log(event.currentTarget.parentNode.parentNode);
     });
 });
 
 
-const file = document.getElementById("image");
-const fileName = document.querySelector(".image-file-name");
+const file1 = document.getElementById("image");
+const file2 = document.getElementById("edit-image");
 
-file.addEventListener("change", () => {
-    const name = file.files[0].name;
+const fileName1 = document.querySelector(".image-file-name");
+const fileName2 = document.querySelector(".image-file-name-2");
+
+
+file1.addEventListener("change", () => {
+    const name = file1.files[0].name;
     if (name) {
-        fileName.innerHTML = `Selected file: ${name}`;
+        fileName1.innerHTML = `Selected file: ${name}`;
+    }else{
+        fileName1.innerHTML = `Selected file: None`;
+    }
+});
+
+file2.addEventListener("change", () => {
+    const name = file2.files[0].name;
+    if (name) {
+        fileName2.innerHTML = `Selected file: ${name}`;
+    }else{
+        fileName2.innerHTML = `Selected file: None`;
     }
 });
 

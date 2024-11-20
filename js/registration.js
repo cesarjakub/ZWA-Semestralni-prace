@@ -27,7 +27,7 @@ function validatePasswordCheckForWhiteSpace(){
     const regex = /\s+/;
     result = regex.test(password1.value);
     if(result){
-        error.innerHTML = "<p>Password cant contain white spaces!</p>";
+        error.innerHTML = "<p>Password can't contain white spaces!</p>";
         error.style.display = "block";
         return false;
     }else{

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!--<link rel="stylesheet" href="#" media="print">-->
 
     <script src="../js/home.js" defer></script>
@@ -21,10 +21,20 @@
                 <p class="card-profile-email">Jakubcesar@seznam.cz</p>
             </div>
             <div class="btn-group">
-                <input class="edit-btn" type="submit" value="Edit Profile">
-                <input class="add-recipe-btn" type="submit" value="Add recipe">
+                <button class="edit-btn" type="submit">
+                    <img src="../images/icons/edit.svg" alt="edit-icon">
+                </button>
+                <button class="add-recipe-btn" type="submit" value="Add recipe">
+                    <img src="../images/icons/add.svg" alt="add-icon">
+                </button>
+                <a class="my-recipes-btn" href="myRecipes.html">
+                    <img src="../images/icons/settings.svg" alt="settings-icon">
+
+                </a>
                 <form action="#" method="post">
-                    <button type="submit" name="logout" value="logout" class="logout-btn">Logout</button>
+                    <button type="submit" name="logout" value="logout" class="logout-btn">
+                        <img src="../images/icons/logout.svg" alt="logout-icon">
+                    </button>
                 </form>
             </div>
         </div>
@@ -36,17 +46,18 @@
             </div>
             <form class="form" action="#" method="post">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Name *</label>
                     <input required placeholder="Enter your name" autocomplete="off" name="name" id="name" type="text">
                 </div>
         
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input required name="email" placeholder="Enter your email" autocomplete="off" id="email" type="email">
                 </div>
-        
+                
                 <input type="submit" class="form-submit-btn" value="Save Changes">
             </form>
+            <p class="indicator">* indicates a required field</p>
         </div>
 
         <div class="add-recipe-modal">
@@ -56,13 +67,13 @@
             </div>
             <form class="form" action="#" method="post">
                 <div class="form-group">
-                    <label for="title">Title</label>
+                    <label for="title">Title *</label>
                     <input required placeholder="Enter title" name="title" id="title" type="text">
                 </div>
         
                 <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea required name="description" placeholder="Enter description" id="description" type="email"></textarea>
+                    <label for="description">Description *</label>
+                    <textarea required name="description" placeholder="Enter description" id="description"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -73,6 +84,7 @@
         
                 <input type="submit" class="form-submit-btn" value="Save recipe">
             </form>
+            <p class="indicator">* indicates a required field</p>
         </div>
 
         <div class="cards-pagination">
@@ -82,30 +94,16 @@
                         <h2>Špagety Carbonara</h2>
                     </div>
                     <div class="image-placeholder">
-                        <img src="" alt="image of {name}">
+                        <img src="#" alt="image of {name}">
                     </div>
-                    <div class="card-content">
-                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
-                    </div>
-                    <div class="card-footer">
-                        <h4>Jakub César</h4>
-                        <p>2024-10-29</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Špagety Carbonara</h2>
-                    </div>
-                    <div class="image-placeholder">
-                        <img src="" alt="image of {name}">
-                    </div>
-                    <div class="card-content">
-                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
-                    </div>
-                    <div class="card-footer">
-                        <h4>Jakub César</h4>
-                        <p>2024-10-29</p>
+                    <div class="card-cotn">
+                        <div class="card-content">
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                        </div>
+                        <div class="card-footer">
+                            <h4>Jakub César</h4>
+                            <p>2024-10-29</p>
+                        </div>
                     </div>
                 </div>
 
@@ -114,14 +112,23 @@
                         <h2>Špagety Carbonara</h2>
                     </div>
                     <div class="image-placeholder">
-                        <img src="" alt="image of {name}">
+                        <img src="#" alt="image of {name}">
                     </div>
-                    <div class="card-content">
-                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
-                    </div>
-                    <div class="card-footer">
-                        <h4>Jakub César</h4>
-                        <p>2024-10-29</p>
+                    <div class="card-cotn">
+                        <div class="card-content">
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            v
+                            v
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                        </div>
+                        <div class="card-footer">
+                            <h4>Jakub César</h4>
+                            <p>2024-10-29</p>
+                        </div>
                     </div>
                 </div>
 
@@ -130,14 +137,48 @@
                         <h2>Špagety Carbonara</h2>
                     </div>
                     <div class="image-placeholder">
-                        <img src="" alt="image of {name}">
+                        <img src="#" alt="image of {name}">
                     </div>
-                    <div class="card-content">
-                        Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                    <div class="card-cotn">
+                        <div class="card-content">
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            v
+                            v
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                        </div>
+                        <div class="card-footer">
+                            <h4>Jakub César</h4>
+                            <p>2024-10-29</p>
+                        </div>
                     </div>
-                    <div class="card-footer">
-                        <h4>Jakub César</h4>
-                        <p>2024-10-29</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Špagety Carbonara</h2>
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="#" alt="image of {name}">
+                    </div>
+                    <div class="card-cotn">
+                        <div class="card-content">
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            v
+                            v
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                            Na pánvi orestujeme pancettu, přidáme šlehačku, parmazán a mícháme se špagetami.
+                        </div>
+                        <div class="card-footer">
+                            <h4>Jakub César</h4>
+                            <p>2024-10-29</p>
+                        </div>
                     </div>
                 </div>
 
@@ -145,7 +186,7 @@
 
             </div>
             <div class="pagination">
-                <a href="#">1</a>
+                <a href="#" class="active">1</a>
                 <div class="line"></div>
                 <a href="#">2</a>
                 <div class="line"></div>

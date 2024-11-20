@@ -38,5 +38,7 @@ file.addEventListener("change", () => {
     const name = file.files[0].name;
     if (name) {
         fileName.innerHTML = `Selected file: ${name}`;
+    }else{
+        fileName.innerHTML = `Selected file: None`;
     }
 });
